@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(255, 166, 0);
+    background-color: #0f222b;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+header > h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+header > p {
+    font-size: 1.5rem;
+}
+p > span {
+    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: bold;
+}
+.battle_result {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.display_wepon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    font-size: 2rem;
+    gap: 10rem;
+}
+
+.player,
+.computer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_weapon,
+.computer_weapon {
+    border: 5px solid orange;
+    width: 8rem;
+    height: 7rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.wepons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    padding: 2rem;
+    font-size: 2.5rem;
+    background-color: rgb(51, 137, 137);
+    cursor: pointer;
+    border: 5px solid orange;
+}
+
+.btn:hover {
+    background-color: rgb(34, 249, 249);
+}
+
+.win {
+    color: aqua;
+}
+
+.lose {
+    color: red;
+}
+
+.tie {
+    color: yellow;
+}
+
+.hide {
+    visibility: none;
+    opacity: 0;
+}

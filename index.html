@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <p>Beat the Computer <span>5</span> rounds to win.</p>
+    </header>
+    <main>
+        <p class="battle_result hide">This is the result</p>
+        <section class="display_wepon">
+            <div class="player">
+                <span>Player</span>
+                <span class="player_weapon">🪨</span>
+                <span class="player_score"> 0</span>
+            </div>
+            <div class="computer">
+                <span>Computer</span>
+                <span class="computer_weapon">?</span>
+                <span class="computer_score"> 0</span>
+            </div>
+        </section>
+
+        <section class="wepons">
+            <button class="btn btn_rock">🪨</button>
+            <button class="btn btn_paper">📃</button>
+            <button class="btn btn_scissor">✂️</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
