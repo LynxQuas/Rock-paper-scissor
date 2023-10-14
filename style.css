@@ -57,6 +57,7 @@ p > span {
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .player_weapon,
@@ -89,10 +90,12 @@ p > span {
 
 .win {
     color: aqua;
+    font-size: 5rem;
 }
 
 .lose {
     color: red;
+    font-size: 5rem;
 }
 
 .tie {
