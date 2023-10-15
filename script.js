@@ -28,14 +28,17 @@ const clickHandler = function (e) {
     playRound(playerSelection, computerSelection);
 
     if (playerScore === 5) {
-        result.classList.add("win");
-        document.removeEventListener("click", clickHandler);
+        displayResult("win");
     }
     if (computerScore === 5) {
-        result.classList.add("lose");
-        document.removeEventListener("click", clickHandler);
+        displayResult("lose");
     }
 };
+
+function displayResult(winOrLose) {
+    result.classList.add(winOrLose);
+    document.removeEventListener("click", clickHandler);
+}
 
 document.addEventListener("click", clickHandler);
 
